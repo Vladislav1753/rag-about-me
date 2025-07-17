@@ -1,0 +1,26 @@
+# Core
+fastapi
+uvicorn
+pydantic
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-huggingface
+langchain-deepseek
+
+# Embeddings & vectorstore
+faiss-cpu
+sentence-transformers
+
+# Data loading & splitting
+unstructured
+tiktoken
+
+# LLM integration
+python-dotenv
+httpx
+
+# Web UI
+streamlit
+requests

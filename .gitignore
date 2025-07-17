@@ -1,0 +1,16 @@
+.env
+
+data
+
+test_main.http
+
+vectorstore
+
+__pycache__/
+*.py[cod]
+
+*.log
+*.DS_Store
+*.bak
+
+venv/
