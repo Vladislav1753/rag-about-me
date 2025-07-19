@@ -4,7 +4,7 @@ import requests
 st.set_page_config(page_title="Ask Vlad's Agent", page_icon="🤖")
 
 st.title("🤖 Ask Vlad's AI Agent")
-st.markdown("### Curious about Vlad? Ask (almost) anything!")
+st.markdown("### Curious about Vlad? Ask (almost) anything! (actually just a few questions)")
 
 st.markdown("#### ✅ Examples of questions I **can** answer:")
 st.markdown("""
@@ -19,7 +19,7 @@ st.markdown("""
 
 st.markdown("<hr style='margin:1em 0'>", unsafe_allow_html=True)
 
-st.markdown("#### ⚠️ Examples of questions I **won’t** know (yet):", unsafe_allow_html=True)
+st.markdown("#### ⚠️ Examples of questions I **don’t** know (yet):", unsafe_allow_html=True)
 with st.expander("Show examples of 'unknowns'"):
     st.markdown("""
     - 💍 What is Vlad’s opinion on marriage?  
@@ -40,7 +40,7 @@ if st.button("Ask"):
         with st.spinner("Thinking..."):
             try:
                 response = requests.post(
-                    "http://localhost:8000/ask",
+                    "https://rag-vlad-api-189704280321.europe-west1.run.app/ask",
                     json={"question": question}
                 )
                 if response.status_code == 200:

@@ -49,19 +49,6 @@ chain = create_retrieval_chain(
     combine_docs_chain=combine_docs_chain
 )
 
-# def main():
-#     while True:
-#         question = input("Ask a question about Vlad (or 'exit'): ").strip()
-#         if question.lower() in {"exit", "quit"}:
-#             break
-#
-#         result = chain.invoke({"input": question})
-#         print("\nAnswer:", result["answer"])
-#         print("-" * 50)
-
-# if __name__ == "__main__":
-#     main()
-
 
 # Pydantic model for request
 class QuestionRequest(BaseModel):
